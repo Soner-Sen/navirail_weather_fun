@@ -31,6 +31,8 @@ class _RailState extends State<Rail> {
           children: [
             SafeArea(
               child: NavigationRail(
+                backgroundColor: const Color(0xFF282c34),
+                unselectedIconTheme: const IconThemeData(color: Colors.white),
                 extended: constraints.maxWidth > 1200,
                 destinations: const [
                   NavigationRailDestination(
